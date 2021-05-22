@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 9fr;
+}
+
+.title {
+  grid-column: 1/-1;
+  background-color: darkslategray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  border: 0.3px solid lightgray;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.section-title figure {
+  display: flex;
+  width: 30%;
+  height: 2rem;
+  align-items: center;
+}
+
+
+.section-title figure img{
+  width: 30%;
+  height: 80%;
+}
+
+.section-title figure figcaption{
+  margin-left: 1rem;
+}
+
+#preview {
+  width: 100%;
+  height: calc(100vh - (10vh + 3 * 1rem));
+  resize: none;
+}
+
+/*** ESTILOS EDITOR *****/
+#preview {
+  padding: 1.5rem;
+}
+
+/*** ESTILOS PREVIEW *****/
+#preview {
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+#preview h1, 
+#preview h2, 
+#preview h3, 
+#preview h4, 
+#preview h5, 
+#preview h6 
+{
+  text-decoration: underline;
+}
+
+#preview code {
+  background-color: skyblue;
+  font-weight: bold;
+}
+
